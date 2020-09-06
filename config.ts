@@ -1,6 +1,6 @@
 const siteMetadata = {
     title: `Kamimura`,
-    siteUrl: `http://localhost`,
+    siteUrl: `https://kamimura.netlify.app/`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
@@ -58,7 +58,7 @@ const siteMetadata = {
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
-            url: "https://twitter.com/handballno_3",
+            url: "https://twitter.com/Ryosuke_Kamimur",
         },
         {
             name: "Instagram",
