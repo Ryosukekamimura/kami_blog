@@ -1,0 +1,127 @@
+---
+title: ServerLessLT#3に登壇した話
+date: 2020-09-08
+image: ./teach_image.jpg
+banner: ./teach_banner.jpg
+description: 発表内容[サーバーレス機械学習Firebase編]
+---
+
+
+
+---
+
+## はじめに
+
+今回は、初めてLT大会に参加させていただきました！
+最初に、ServerLessLTを主催していただいた小島()さんありがとうございました！
+
+## で、何を発表したの？
+
+今回、サーバーレス機械学習[Firebase編]というテーマで発表しました！
+
+
+
+## チュートリアル
+
+# Firebaseで行うサーバーレス機械学習
+
+最初に公式ホームページよりhttps://firebase.google.com/docs/ml-kit?hl=ja
+
+
+![](/homepage.png)
+
+ふむふむ、デバイス版とクラウド版があるのか、、
+
+今回はServerLessLTということもあって、クラウド版をやっていこうと思います！
+
+
+
+![](/details.png)
+
+
+
+## FirebaseMLを使用して画像内のテキストを認識する方法
+
+
+
+
+#### ①iOSアプリにFirebaseを追加します
+!!! エラー!!!!
+
+発生したエラーに対応する記事
+https://qiita.com/nkekisasa222/items/a6a0b69f38cc30cd91b8
+
+
+
+#### ②プロジェクトでクラウドベースのAPIを有効にしていない場合は、有効にする
+![](/allow_cloud.png)
+
+
+#### ③Firebaseの公式チュートリアルを参考にしてコードを書き書きする
+
+```
+
+// テキスト認識の関数
+func recognizedTextFunc() -> String{
+
+        //取得したテキストを一時的に入れる
+        var getTexts: [String] = []
+
+        let vision = Vision.vision()
+        let options = VisionCloudTextRecognizerOptions()
+        options.languageHints = ["en", "ja"]
+        let textRecognizer = vision.cloudTextRecognizer(options: options)
+        let visionImage = VisionImage(image: UIImage(named: imageFileName.imageName)!)
+        
+        textRecognizer.process(visionImage) { result, error in
+            guard error == nil, let result = result else {
+                // ...
+                return
+            }
+            
+            //let resultText = result.text
+            for block in result.blocks {
+                //let blockText = block.text
+                //let blockConfidence = block.confidence
+                //let blockLanguages = block.recognizedLanguages
+                //let blockCornerPoints = block.cornerPoints
+                //let blockFrame = block.frame
+                for line in block.lines {
+                    //let lineText = line.text
+                    //let lineConfidence = line.confidence
+                    //let lineLanguages = line.recognizedLanguages
+                    //let lineCornerPoints = line.cornerPoints
+                    //let lineFrame = line.frame
+                    for element in line.elements {
+                        let elementText = element.text
+                        //let elementConfidence = element.confidence
+                        //let elementLanguages = element.recognizedLanguages
+                        //let elementCornerPoints = element.cornerPoints
+                        //let elementFrame = element.frame
+                        
+                        //self.recognizedText.wrappedValue = elementText
+                        //self.text = elementText
+                        print("debug \(elementText)")
+                        getTexts.append(elementText)
+                    }
+                }
+            }
+            self.recognizedText = getTexts.joined(separator: "")
+            print("debug \(self.recognizedText)")
+        }
+        self.isfinished.toggle()
+        print("text -> \(self.recognizedText)")
+        
+        return self.recognizedText
+    }
+
+```
+
+
+以上で完了です！
+
+よければ、自分のGithubのソースコードをみていただき、参考になれば幸いです！
+(https://github.com/Ryosukekamimura/kami_blog)
+
+
+最後まで見ていただき、ありがとうございました！
