@@ -19,13 +19,22 @@ description: 発表内容[サーバーレス機械学習Firebase編]
 
 今回、サーバーレス機械学習[Firebase編]というテーマで発表しました！
 
+## 参加してみて
 
+はじめてLT大会に参加してみて、自分のアウトプットに対する評価をすぐいただける点が本当にありがたいと感じました。
+
+これからは、自分も積極的にLT大会に参加していきたいと思いました！
+
+本当にありがとうございました！
+
+
+[http://slidelive.com]()
 
 ## チュートリアル
 
 # Firebaseで行うサーバーレス機械学習
 
-最初に公式ホームページよりhttps://firebase.google.com/docs/ml-kit?hl=ja
+最初に公式ホームページより[https://firebase.google.com/docs/ml-kit?hl=ja]()
 
 
 ![](/homepage.png)
@@ -46,10 +55,9 @@ description: 発表内容[サーバーレス機械学習Firebase編]
 
 
 #### ①iOSアプリにFirebaseを追加します
-!!! エラー!!!!
 
 発生したエラーに対応する記事
-https://qiita.com/nkekisasa222/items/a6a0b69f38cc30cd91b8
+[https://qiita.com/nkekisasa222/items/a6a0b69f38cc30cd91b8]()
 
 
 
@@ -71,6 +79,9 @@ func recognizedTextFunc() -> String{
         let options = VisionCloudTextRecognizerOptions()
         options.languageHints = ["en", "ja"]
         let textRecognizer = vision.cloudTextRecognizer(options: options)
+
+        // MARK: - 画像ファイルを変える
+
         let visionImage = VisionImage(image: UIImage(named: imageFileName.imageName)!)
         
         textRecognizer.process(visionImage) { result, error in
@@ -121,7 +132,7 @@ func recognizedTextFunc() -> String{
 以上で完了です！
 
 よければ、自分のGithubのソースコードをみていただき、参考になれば幸いです！
-(https://github.com/Ryosukekamimura/kami_blog)
+[https://github.com/Ryosukekamimura]()
 
 
 最後まで見ていただき、ありがとうございました！
