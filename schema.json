@@ -3591,26 +3591,6 @@
               "defaultValue": null
             },
             {
-              "name": "template",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "image",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "FileFilterInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
               "name": "description",
               "description": "",
               "type": {
@@ -3631,11 +3611,31 @@
               "defaultValue": null
             },
             {
+              "name": "image",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "FileFilterInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "banner",
               "description": "",
               "type": {
                 "kind": "INPUT_OBJECT",
                 "name": "FileFilterInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "template",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StringQueryOperatorInput",
                 "ofType": null
               },
               "defaultValue": null
@@ -8060,30 +8060,6 @@
               "deprecationReason": null
             },
             {
-              "name": "template",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "image",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "OBJECT",
-                "name": "File",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "description",
               "description": null,
               "args": [],
@@ -8149,12 +8125,36 @@
               "deprecationReason": null
             },
             {
+              "name": "image",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "OBJECT",
+                "name": "File",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "banner",
               "description": null,
               "args": [],
               "type": {
                 "kind": "OBJECT",
                 "name": "File",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "template",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
                 "ofType": null
               },
               "isDeprecated": false,
@@ -9662,7 +9662,13 @@
               "deprecationReason": null
             },
             {
-              "name": "childMdx___frontmatter___template",
+              "name": "childMdx___frontmatter___description",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "childMdx___frontmatter___date",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -9884,18 +9890,6 @@
               "deprecationReason": null
             },
             {
-              "name": "childMdx___frontmatter___description",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "childMdx___frontmatter___date",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "childMdx___frontmatter___banner___sourceInstanceName",
               "description": null,
               "isDeprecated": false,
@@ -10107,6 +10101,12 @@
             },
             {
               "name": "childMdx___frontmatter___banner___children",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "childMdx___frontmatter___template",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -20038,7 +20038,13 @@
               "deprecationReason": null
             },
             {
-              "name": "frontmatter___template",
+              "name": "frontmatter___description",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "frontmatter___date",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -20416,18 +20422,6 @@
               "deprecationReason": "Sorting on fields that need arguments to resolve is deprecated."
             },
             {
-              "name": "frontmatter___description",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "frontmatter___date",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
               "name": "frontmatter___banner___sourceInstanceName",
               "description": null,
               "isDeprecated": false,
@@ -20798,6 +20792,12 @@
               "description": null,
               "isDeprecated": true,
               "deprecationReason": "Sorting on fields that need arguments to resolve is deprecated."
+            },
+            {
+              "name": "frontmatter___template",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
             },
             {
               "name": "slug",
