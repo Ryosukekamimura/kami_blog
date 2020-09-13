@@ -11,7 +11,7 @@ const siteMetadata = {
     introTag: `| iOS ENGINEER | `,
     description: `My name is RyosukeKamimura. I'm Gifu university Student!!`,
     about:
-        "About My Profile site and Blog",
+        "/ iOS / 22卒 /  筋トレ / Swift / Flutter / Python / ML / C# / 朝活 /",
     author: `@kamimura`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
