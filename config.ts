@@ -9,7 +9,7 @@ const siteMetadata = {
     twoColumnWall: true,
     cookiePolicy: true,
     introTag: `| iOS ENGINEER | `,
-    description: `My name is RyosukeKamimura. I'm Gifu university Student!!`,
+    description: `My name is RyosukeKamimura. I'm Gifu University Student!`,
     about:
         "/ iOS / 22卒 /  筋トレ / Swift / Flutter / Python / ML / C# / 朝活 /",
     author: `@kamimura`,
