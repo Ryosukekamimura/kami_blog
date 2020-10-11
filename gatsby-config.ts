@@ -4,6 +4,7 @@ import autoprefixer from 'autoprefixer';
 import tailwindcss from 'tailwindcss';
 
 const plugins = [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-react-helmet`,

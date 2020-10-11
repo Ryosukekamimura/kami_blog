@@ -1,6 +1,6 @@
 const siteMetadata = {
     title: `Kamimura`,
-    siteUrl: `https://kamimura.netlify.app/`,
+    siteUrl: `https://ryosuke-kamimura.com`,
     capitalizeTitleOnHome: false,
     logo: `/images/R-logo.png`,
     icon: `/images/R-icon.png`,
@@ -12,7 +12,7 @@ const siteMetadata = {
     description: `My name is RyosukeKamimura. I'm Gifu University Student!`,
     about:
         "/ iOS /  筋トレ / Swift / Flutter / Python / ML / C# / 朝活 /",
-    author: `@kamimura`,
+    author: `Ryosuke Kamimura`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: false,
