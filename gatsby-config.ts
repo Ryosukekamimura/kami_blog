@@ -18,6 +18,13 @@ const plugins = [
         },
     },
     {
+        resolve: `gatsby-plugin-canonical-urls`,
+        options: {
+            siteUrl: `https://ryosuke-kamimura.com`,
+            stripQueryString: true,
+        },
+    },
+    {
         resolve: `gatsby-source-filesystem`,
         options: {
             name: `portfolio`,

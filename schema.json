@@ -15945,6 +15945,26 @@
               "defaultValue": null
             },
             {
+              "name": "siteUrl",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "StringQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
+              "name": "stripQueryString",
+              "description": "",
+              "type": {
+                "kind": "INPUT_OBJECT",
+                "name": "BooleanQueryOperatorInput",
+                "ofType": null
+              },
+              "defaultValue": null
+            },
+            {
               "name": "gatsbyRemarkPlugins",
               "description": "",
               "type": {
@@ -16090,16 +16110,6 @@
             },
             {
               "name": "main",
-              "description": "",
-              "type": {
-                "kind": "INPUT_OBJECT",
-                "name": "StringQueryOperatorInput",
-                "ofType": null
-              },
-              "defaultValue": null
-            },
-            {
-              "name": "author",
               "description": "",
               "type": {
                 "kind": "INPUT_OBJECT",
@@ -16846,6 +16856,30 @@
               "deprecationReason": null
             },
             {
+              "name": "siteUrl",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "String",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "stripQueryString",
+              "description": null,
+              "args": [],
+              "type": {
+                "kind": "SCALAR",
+                "name": "Boolean",
+                "ofType": null
+              },
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "gatsbyRemarkPlugins",
               "description": null,
               "args": [],
@@ -16992,18 +17026,6 @@
             },
             {
               "name": "main",
-              "description": null,
-              "args": [],
-              "type": {
-                "kind": "SCALAR",
-                "name": "String",
-                "ofType": null
-              },
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "author",
               "description": null,
               "args": [],
               "type": {
@@ -18240,6 +18262,18 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginCreator___pluginOptions___siteUrl",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginCreator___pluginOptions___stripQueryString",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginCreator___pluginOptions___gatsbyRemarkPlugins",
               "description": null,
               "isDeprecated": false,
@@ -18307,12 +18341,6 @@
             },
             {
               "name": "pluginCreator___packageJson___main",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "pluginCreator___packageJson___author",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
@@ -23519,6 +23547,18 @@
               "deprecationReason": null
             },
             {
+              "name": "pluginOptions___siteUrl",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
+              "name": "pluginOptions___stripQueryString",
+              "description": null,
+              "isDeprecated": false,
+              "deprecationReason": null
+            },
+            {
               "name": "pluginOptions___gatsbyRemarkPlugins",
               "description": null,
               "isDeprecated": false,
@@ -23592,12 +23632,6 @@
             },
             {
               "name": "packageJson___main",
-              "description": null,
-              "isDeprecated": false,
-              "deprecationReason": null
-            },
-            {
-              "name": "packageJson___author",
               "description": null,
               "isDeprecated": false,
               "deprecationReason": null
